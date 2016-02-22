@@ -33,7 +33,7 @@ class BusinessCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        //thumbView.layer.cornerRadius = 5
+        thumbView.layer.cornerRadius = 5
         thumbView.clipsToBounds = true
         
        // nameLabel.preferredMaxLayoutWidth  = nameLabel.frame.size.width

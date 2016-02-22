@@ -26,6 +26,8 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
         searchBar.sizeToFit()
         navigationItem.titleView = searchBar
         filteredData = businesses
+        searchBar.barTintColor = UIColor .blueColor()
+        searchBar.placeholder = "Search"
         
         
         
@@ -33,7 +35,7 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
-           self.filteredData = businesses
+            self.filteredData = businesses
             self.tableView.reloadData()
             for business in businesses {
                 print(business.name!)
@@ -69,6 +71,7 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BusinessCell", forIndexPath: indexPath) as! BusinessCell
+        cell.selectionStyle = .None
         cell.business = filteredData[indexPath.row]
         return cell
     }
