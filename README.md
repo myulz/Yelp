@@ -25,8 +25,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. Appearance
+2. Different device location
 
 ## Video Walkthrough 
 
@@ -39,6 +39,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I had trouble implementing the search bar, and kinda got it working by accident?
+
 
 ## License
 
